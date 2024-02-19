@@ -1,0 +1,35 @@
+API 1 Get all players
+###
+GET http://localhost:3000/players/
+
+###
+API 2 Add a new player to the Database
+###
+POST http://localhost:3000/players/
+Content-Type: application/json
+
+{
+  "playerName": "Vishal",
+  "jerseyNumber": 17,
+  "role": "Bowler"
+}
+
+###
+API3 Get player basaed on their ID
+###
+GET http://localhost:3000/players/9/
+
+###
+API5 Delete player from Database
+###
+DELETE http://localhost:3000/players/4
+
+###
+PUT http://localhost:/3000/players/6
+Content-Type: application/json
+
+{
+    "playerName":"Indra",
+    "jerseyNumber":47,
+    "role": "All-rounder"
+}
